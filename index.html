@@ -60,9 +60,29 @@ great guy, and caring to my firned. As long as she is happy, I'm happy. I'm plan
 <html>
     <body>
 <center>
+    <head> 
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            .column {
+              float: left;
+              width: 33.33%;
+              padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            </style>
+     </head>
 <div class="row">
     <div class="column">
-      <img src="Images/mom.jpg" alt="Mother" width="200" height="200">
+      <img src="Images/mom.jpg" alt="Mother" style = "width: 100%;">
     </div>
     <div class="column">
       <img src="Images/dad.jpg" alt="Dad" width="200" height="200">
